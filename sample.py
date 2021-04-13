@@ -1,5 +1,5 @@
-# compare_by_each_chars - Hongsu Wang
-# Description:
+#  compare_by_each_chars - Hongsu Wang
+#  Description:
 #    Compare two strings by using each of their characters
 #  Reference link:
 #    None
