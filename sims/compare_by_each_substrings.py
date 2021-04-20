@@ -20,7 +20,7 @@ def compare(str_1, str_2, algorithm_var):
         target = str_2
         candi_string = str_1
     else:
-        print(f'please check the third parameter of your input')
+        print('please check the third parameter of your input')
         sys.exit()
     candi_list = [candi_string[i:i + x + 1] for x in range(len(candi_string)) for i in range(len(candi_string) - x)]
     for candi in candi_list:
