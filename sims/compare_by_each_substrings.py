@@ -10,7 +10,7 @@ def compare(str_1, str_2, algorithm_var):
 
     :param algorithm_var: which string is the target string (the third variable must same as the one of the first two variables)  - [string]
 
-    :return: similarity degree - number
+    :return: [similarity degree] - [number]
     '''
     algorithm_var_str = algorithm_var[0]
     if algorithm_var_str == str_1:
@@ -30,4 +30,4 @@ def compare(str_1, str_2, algorithm_var):
             break
         else:
             max_rate = 0
-    return max_rate
+    return [max_rate]

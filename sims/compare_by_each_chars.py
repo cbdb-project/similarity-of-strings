@@ -9,9 +9,7 @@ def compare(str_1, str_2, algorithm_var):
 
     :param algorithm_var: the varibles for this algorithm  - list
 
-    :return: similarity degree - number
-
-    :return: [how many characters matched, which characters matched] - list
+    :return: [similarity degree, [how many characters matched, which characters matched]] - [number, list]
     '''
     str_1_set = set(str_1)
     str_1_set_len = len(str_1_set)
@@ -23,4 +21,4 @@ def compare(str_1, str_2, algorithm_var):
         max_rate = max(intersection_set_len/str_1_set_len, intersection_set_len/str_2_set_len)
     else:
         max_rate = 0
-    return max_rate, [intersection_set_len, ";".join(intersection_set)]
+    return [max_rate, [intersection_set_len, ";".join(intersection_set)]]
