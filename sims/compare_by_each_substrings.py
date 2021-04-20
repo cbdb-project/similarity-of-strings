@@ -1,12 +1,15 @@
+import sys
 def compare(str_1, str_2, algorithm_var):
-    if algorithm_var == str_1:
+    algorithm_var_str = algorithm_var[0]
+    if algorithm_var_str == str_1:
         target = str_1
         candi_string = str_2
-    elif algorithm_var == str_2:
+    elif algorithm_var_str == str_2:
         target = str_2
         candi_string = str_1
     else:
-        Print('please input the algorithm_var(string)!')
+        print(f'please check the third parameter of your input')
+        sys.exit()
     candi_list = [candi_string[i:i + x + 1] for x in range(len(candi_string)) for i in range(len(candi_string) - x)]
     for candi in candi_list:
         if len(candi)<len(target):pass
