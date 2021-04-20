@@ -1,4 +1,18 @@
+'''
+Compare two strings by using each of their characters (Hongsu Wang)
+'''
 def compare(str_1, str_2, algorithm_var):
+    '''
+    :param str_1: the first strings need to be compared - string 
+
+    :param str_2: the second strings need to be compared - string 
+
+    :param algorithm_var: the varibles for this algorithm  - list
+
+    :return: similarity degree - number
+
+    :return: [how many characters matched, which characters matched] - list
+    '''
     str_1_set = set(str_1)
     str_1_set_len = len(str_1_set)
     str_2_set = set(str_2)

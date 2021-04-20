@@ -1,5 +1,17 @@
+'''
+Compare two strings by using each of substrings of candidate string (Linxu Wang)
+'''
 import sys
 def compare(str_1, str_2, algorithm_var):
+    '''
+    :param str_1: the first strings need to be compared - string 
+
+    :param str_2: the second strings need to be compared - string 
+
+    :param algorithm_var: which string is the target string (the third variable must same as the one of the first two variables)  - [string]
+
+    :return: similarity degree - number
+    '''
     algorithm_var_str = algorithm_var[0]
     if algorithm_var_str == str_1:
         target = str_1
