@@ -70,8 +70,6 @@ def create_training_data_main(expressions, expression_answers, dictionary_list):
         # output_for_single_expression = ["".join(i) for i in output_for_single_expression]
         output_for_single_expression = [["".join(i), answer] for i in output_for_single_expression]
         output = output + output_for_single_expression
-        if answer == "知某州軍州事":
-            print(0)
         output_for_single_expression = [[""]]
         output = [i for i in output if i !=""]
     return output
